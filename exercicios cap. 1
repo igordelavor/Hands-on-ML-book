@@ -1,0 +1,89 @@
+Cap.1 - Machine Learning
+
+Exercícios
+
+1. How would you define Machine Learning?
+
+R - It's the field of study that gives computers the ability to learn from data without being explicitly programmed.
+
+2. Can you name four types of problems where it shines?
+
+R - (1) For problems that require a long list of rules and fine-tuning; (2) Complex problems for which using a traditional approach yields no good solution; (3) Fluctuating environments, a ML system can adapt to new data; (4) Getting insights about complex problems and allrge amounts of dara. 
+
+3. What is a labeled training set?
+
+R - It's a training set that pre-emptively labels the data into the desired solutions, the ML system uses these labels to differentiate data points - Supervised Learning.
+
+4. What are the two most common supervised tasks?
+
+R - (1)Classification - how to classify new emails based on their class
+(2) Target - to predict a numeric value given a set of features called predictors.
+
+5. Can you name four common unsupervised tasks?
+
+R - (1) ANOMALY DETECTION - automatically removing outliers from a dataset before feeding it to another learning algorithm; (2) ASSOCIATION RULE LEARNING - the goal is to dig into large amounts of data and discover interesting relations between attributes; (3) DIMENSIONALITY REDUCTION - the goal is to simplify the data without losing too much information; (4) NOVELTY DETECTION - it aims to detect new instances that look different from all instances in the training set.
+
+6. What type of Machine Learning algorithm would you use to allow a robot to walk in various unknown terrains?
+
+R - Reinforcement Learning algorithms.
+
+7. What type of algorithm would you use to segment your customers into multiple groups?
+
+R - Unsupervised algorithm.
+
+8. Would you frame the problem of spam detection as a supervised
+learning problem or an unsupervised learning problem?
+
+R - Supervised learning problem
+
+
+9. What is an online learning system?
+
+R - In online learning, you train the system incrementally by feeding it data
+instances sequentially, either individually or in small groups called mini-
+batches. Each learning step is fast and cheap, so the system can learn
+about new data as it arrives.
+
+10. What is out-of-core learning?
+
+R - It's an online learning algorithms used to train systems on huge datasets that cannot fit in one machine's main memory, the algorithm loads part of the data, runs a training step of that datam and repeats the process until it has run on all of the data.
+
+11. What type of learning algorithm relies on a similarity measure to make predictions?
+
+R - Instance-based learning.
+
+12. What is the difference between a model parameter and a learning algorithm’s hyperparameter?
+
+R - The hyperparameter isn't affected by the learning algorithm itself, therefore it remains constant during training.
+
+13. What do model-based learning algorithms search for? What is the most common strategy they use to succeed? How do they make predictions?
+
+R - They use a set of exmaples that represents a trend in the data to create a model, and then use that model to make predictions. Use utility functions to measure how good their model is.
+
+14. Can you name four of the main challenges in Machine Learning?
+
+R - (1) Insufficient quantity of training data; (2) Nonrepresentative training data; (3) Poor-qaulity data; (4) Irrelevant features.
+
+15. If your model performs great on the training data but generalizes poorly to new instances, what is happening? Can you name three possible solutions?
+
+R - Your model is overfitting the training data. (1) Simplify the model; (2) Gather more training data; (3) Fix data errors and remove outliers from the training data.
+
+16. What is a test set, and why would you want to use it?
+
+R - By evaluating your model on the test set, you get an estimate of the error. This value tell you how well your model will perform on instances it has never seen before.
+
+17. What is the purpose of a validation set?
+
+R - You train multiple models with various hyperparameters on ther educed training set and you select the model taht performs best om the bvalidation set.
+
+18. What is the train-dev set, when do you need it, and how do you use it?
+
+R - The train-dev set is a set of training data that has been held out of the training set to check for performance. If it performs well, then the model is not overfitting the training set. If it performs poorly on the validation set, the problem must be coming from the data mismatch.
+
+19. What can go wrong if you tune hyperparameters using the test
+set?
+
+R- you overtly adapt your model to the test set, this means that the model is unlikely to perform well on new data.
+
+
+
